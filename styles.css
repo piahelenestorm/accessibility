@@ -1,0 +1,183 @@
+body {
+  /* variables */
+
+  --color-background: #071120;
+  --color-text: #CCD6F6;
+}
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset,caption,
+table, tr, td, th, address, blockquote, img {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+fieldset,
+object {
+  border: none;
+}
+
+*,
+*:after,
+*:before {
+  flex: 1 0 auto;
+  /* safari bugfix */
+  box-sizing: border-box;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+hr {
+  display: none;
+}
+
+body, button, input, table, textarea, select {
+  font: 1em "poppins", arial, helvetica, sans-serif;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+#faux-body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  overflow-wrap: break-word; /* making sure our content breaks when appropiate */
+  padding: 0vw 4vw;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------------------------------------------------ Link Styling (BEGINNING) ------------------------------------------------------*/
+a {
+  color: var(--color-text);
+  font-size: 1rem;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--color-text);
+}
+a:hover {
+  color: var(--color-text);
+  font-weight: 600;
+}
+a:active {
+  color: var(--color-text);
+}
+
+
+/* ------------------------------------------------------ Header Styling (BEGINNING) ------------------------------------------------------*/
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.logo {
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+  width: fit-content;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.nav {
+  width: fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+.menu-link {
+  width: fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+  text-align: left;
+}
+
+
+/* ------------------------------------------------------ Section Styling (BEGINNING) ------------------------------------------------------*/
+.section {
+  padding-bottom: 5rem;
+}
+
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.feature-wrapper {
+  width: fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+}
+
+section > h2 {
+  padding-bottom: 1rem;
+}
+
+.an-important-sentence {
+  font-size: 2rem;
+}
+
+/* ------------------------------------------------------ Footer Styling (BEGINNING) ------------------------------------------------------*/
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-wrapper > section {
+  width: fit-content; /* making sure our content breaks when appropiate */
+  overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+
+}
+
+@media (min-width: 62rem) {
+
+  .logo {
+    width: fit-content;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 1rem;
+  }
+  
+  .menu-link {
+    width: fit-content; /* making sure our content breaks when appropiate */
+    overflow-wrap: anywhere; /* making sure our content breaks when appropiate */
+    text-align: right;
+  }
+
+}
