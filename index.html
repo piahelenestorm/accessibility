@@ -9,21 +9,9 @@
     content="A simple website that showcases how to handle changing screens and wordwrapping. Nice to use for users who use text resizing on both mobile and desktop browsers.">
   <meta name="keywords" content="simple, website, accessibillity, resizing, wordwrapping">
 
-  <!-- <link rel="stylesheet" href="styles.css" media="screen"> -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <!-- third-generation iPad with high-resolution Retina display: -->
-  <link rel="apple-touch-icon" sizes="144x144" href="https://developer.mozilla.org/static/img/favicon144.png" />
-  <!-- iPhone with high-resolution Retina display: -->
-  <link rel="apple-touch-icon" sizes="114x114" href="https://developer.mozilla.org/static/img/favicon114.png" />
-  <!-- first- and second-generation iPad: -->
-  <link rel="apple-touch-icon" sizes="72x72" href="https://developer.mozilla.org/static/img/favicon72.png" />
-  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon" href="https://developer.mozilla.org/static/img/favicon57.png" />
-  <!-- basic favicon -->
-  <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png" />
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-    media="screen,print">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" media="screen">
 
   <title>
@@ -37,7 +25,7 @@
   <div id="faux-body">
 
 
-    <header class="header">
+    <header class="header" aria-label="Main Navigation">
       <a href="/" class="logo">LOGO</a>
       <nav class="nav">
         <ul class="menu">
@@ -58,7 +46,7 @@
           Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
           quarter crow's nest nipperkin
           grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway
-          rutters. <br /><br />
+          rutters. <br><br>
           Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Shiver me
           timbers to go on account
           lookout wherry doubloon chase. Belay yo-ho-ho
@@ -113,6 +101,8 @@
 
       <section>
         <h2>Legal links</h2>
+
+        <!-- If using nav here, use aria-label="Footer Navigation" -->
         <ul>
           <li><a href="#">Document 1</a></li>
           <li><a href="#">Document 2</a></li>
