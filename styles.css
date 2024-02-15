@@ -43,6 +43,9 @@ hr {
 
 body, button, input, table, textarea, select {
   font: 1em "poppins", arial, helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 button:focus,
