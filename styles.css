@@ -48,6 +48,10 @@ body, button, input, table, textarea, select {
   margin: 0;
 }
 
+textarea {
+  overflow: auto;
+}
+
 button:focus,
 input:focus,
 select:focus,
